@@ -12,26 +12,6 @@ ComfyUI에서 **Wan Animate FaceOnly** 결과를 SAM3 헤드 트래킹으로 원
 
 글자를 확인할 수 있도록 원본 노드 크기에 가깝게 고해상도로 export한 전체 캡처입니다. 서버에는 이후 같은 형식으로 다시 export할 수 있도록 `Workflow Image Export` 플러그인도 설치돼 있습니다.
 
-### 상세 캡처 / Detail views
-
-**Inputs + global controls**
-
-![Inputs and controls](docs/workflow-01-inputs.png)
-
-**SAM3 tracking and stabilized crop**
-
-![SAM3 tracking A](docs/workflow-03-sam3-a.png)
-
-![SAM3 tracking B](docs/workflow-04-sam3-b.png)
-
-**Wan Animate**
-
-![Wan Animate](docs/workflow-05-wan.png)
-
-**Deliverables + Nuke handoff**
-
-![Outputs and Nuke handoff](docs/workflow-06-outputs.png)
-
 ### 최종 결과 / Nuke 연결
 
 | Final output | Nuke matchmove graph |
