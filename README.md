@@ -8,21 +8,27 @@ ComfyUI에서 **Wan Animate FaceOnly** 결과를 SAM3 헤드 트래킹으로 원
 
 ## 워크플로우 캡처
 
-![ComfyUI workflow](docs/workflow.png)
+![ComfyUI workflow overview](docs/workflow-overview.png)
 
-ComfyUI 캔버스에서 생성한 워크플로우 전체 캡처입니다. 서버에는 이후 같은 형식으로 다시 export할 수 있도록 `Workflow Image Export` 플러그인도 설치돼 있습니다.
+글자를 확인할 수 있도록 원본 노드 크기에 가깝게 고해상도로 export한 전체 캡처입니다. 서버에는 이후 같은 형식으로 다시 export할 수 있도록 `Workflow Image Export` 플러그인도 설치돼 있습니다.
+
+### 최종 결과 / Nuke 연결
+
+| Final output | Nuke matchmove graph |
+| --- | --- |
+| ![Final output](docs/final-output.png) | ![Nuke matchmove graph](docs/nuke-matchmove.png) |
 
 ### 포함 파일
 
 | 경로 | 내용 |
 | --- | --- |
 | `workflows/wan-animate-sam3-head-for-nuke.json` | ComfyUI 워크플로우 |
-| `assets/hd_1920_1080_24fps.mp4` | 이번 00003 실행에 사용한 원본 입력 영상 |
+| `assets/hd_1920_1080_24fps.mp4` | 예제 원본 입력 영상 |
 | `assets/sample_change_face.png` | FaceOnly 레퍼런스 이미지 |
-| `assets/hd_1920_1080_24fps_final.mp4` | 00003 실행의 원본 해상도 합성 결과 |
-| `assets/hd_1920_1080_24fps_face.mp4` | 00003 실행의 정방형 FaceOnly 결과 |
-| `assets/hd_1920_1080_24fps_mask.mp4` | 00003 실행의 정방형 흑백 SAM3 마스크 |
-| `nuke/wan-animate-sam3-head-for-nuke.nk` | 00003 결과용 Nuke matchmove 템플릿 |
+| `assets/hd_1920_1080_24fps_final.mp4` | 원본 해상도 합성 결과 |
+| `assets/hd_1920_1080_24fps_face.mp4` | 정방형 FaceOnly 결과 |
+| `assets/hd_1920_1080_24fps_mask.mp4` | 정방형 흑백 SAM3 마스크 |
+| `nuke/wan-animate-sam3-head-for-nuke.nk` | Nuke matchmove 템플릿 |
 
 ### 사용 순서
 
@@ -72,21 +78,27 @@ This ComfyUI workflow returns a **Wan Animate FaceOnly** result to the original 
 
 ## Workflow capture
 
-![ComfyUI workflow](docs/workflow.png)
+![ComfyUI workflow overview](docs/workflow-overview.png)
 
-Full workflow capture from the ComfyUI canvas. `Workflow Image Export` is also installed on the server for future exports.
+Full high-resolution workflow capture from the ComfyUI canvas, kept close to the native node scale for legible labels. `Workflow Image Export` is also installed on the server for future exports.
+
+### Final output / Nuke graph
+
+| Final output | Nuke matchmove graph |
+| --- | --- |
+| ![Final output](docs/final-output.png) | ![Nuke matchmove graph](docs/nuke-matchmove.png) |
 
 ### Included files
 
 | Path | Description |
 | --- | --- |
 | `workflows/wan-animate-sam3-head-for-nuke.json` | ComfyUI workflow |
-| `assets/hd_1920_1080_24fps.mp4` | Source video used for run `00003` |
+| `assets/hd_1920_1080_24fps.mp4` | Example source video |
 | `assets/sample_change_face.png` | FaceOnly reference image |
-| `assets/hd_1920_1080_24fps_final.mp4` | Full-resolution composited result from run `00003` |
-| `assets/hd_1920_1080_24fps_face.mp4` | Square FaceOnly result from run `00003` |
-| `assets/hd_1920_1080_24fps_mask.mp4` | Square black-and-white SAM3 mask from run `00003` |
-| `nuke/wan-animate-sam3-head-for-nuke.nk` | Nuke matchmove template for run `00003` |
+| `assets/hd_1920_1080_24fps_final.mp4` | Full-resolution composited result |
+| `assets/hd_1920_1080_24fps_face.mp4` | Square FaceOnly result |
+| `assets/hd_1920_1080_24fps_mask.mp4` | Square black-and-white SAM3 mask |
+| `nuke/wan-animate-sam3-head-for-nuke.nk` | Nuke matchmove template |
 
 ### Quick start
 
