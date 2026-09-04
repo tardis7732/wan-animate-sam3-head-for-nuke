@@ -18,6 +18,8 @@ ComfyUI에서 **Wan Animate FaceOnly** 결과를 SAM3 헤드 트래킹으로 원
 | --- | --- |
 | ![Final output](docs/final-output.png) | ![Nuke matchmove graph](docs/nuke-matchmove.png) |
 
+▶ [원본 Input / Final 좌우 비교 영상](assets/hd_1920_1080_24fps_comparison.mp4)
+
 ### 포함 파일
 
 | 경로 | 내용 |
@@ -26,6 +28,7 @@ ComfyUI에서 **Wan Animate FaceOnly** 결과를 SAM3 헤드 트래킹으로 원
 | `assets/hd_1920_1080_24fps.mp4` | 예제 원본 입력 영상 |
 | `assets/sample_change_face.png` | FaceOnly 레퍼런스 이미지 |
 | `assets/hd_1920_1080_24fps_final.mp4` | 원본 해상도 합성 결과 |
+| `assets/hd_1920_1080_24fps_comparison.mp4` | 원본 Input과 Final을 좌우로 붙인 비교 영상 (원본 오디오) |
 | `assets/hd_1920_1080_24fps_face.mp4` | 정방형 FaceOnly 결과 |
 | `assets/hd_1920_1080_24fps_mask.mp4` | 정방형 흑백 SAM3 마스크 |
 | `nuke/wan-animate-sam3-head-for-nuke.nk` | Nuke matchmove 템플릿 |
@@ -88,6 +91,8 @@ Full high-resolution workflow capture from the ComfyUI canvas, kept close to the
 | --- | --- |
 | ![Final output](docs/final-output.png) | ![Nuke matchmove graph](docs/nuke-matchmove.png) |
 
+▶ [Side-by-side Input / Final comparison video](assets/hd_1920_1080_24fps_comparison.mp4)
+
 ### Included files
 
 | Path | Description |
@@ -96,6 +101,7 @@ Full high-resolution workflow capture from the ComfyUI canvas, kept close to the
 | `assets/hd_1920_1080_24fps.mp4` | Example source video |
 | `assets/sample_change_face.png` | FaceOnly reference image |
 | `assets/hd_1920_1080_24fps_final.mp4` | Full-resolution composited result |
+| `assets/hd_1920_1080_24fps_comparison.mp4` | Side-by-side source Input / Final comparison with source audio |
 | `assets/hd_1920_1080_24fps_face.mp4` | Square FaceOnly result |
 | `assets/hd_1920_1080_24fps_mask.mp4` | Square black-and-white SAM3 mask |
 | `nuke/wan-animate-sam3-head-for-nuke.nk` | Nuke matchmove template |
