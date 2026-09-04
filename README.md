@@ -6,6 +6,12 @@
 
 ComfyUI에서 **Wan Animate FaceOnly** 결과를 SAM3 헤드 트래킹으로 원본 플레이트 위치에 되돌리고, Nuke에서 바로 오버할 수 있는 정사각형 Face/Mask와 Matchmove `.nk`를 만드는 워크플로우입니다.
 
+## 워크플로우 캡처
+
+![ComfyUI workflow](docs/workflow.png)
+
+ComfyUI 캔버스에서 생성한 워크플로우 전체 캡처입니다. 서버에는 이후 같은 형식으로 다시 export할 수 있도록 `Workflow Image Export` 플러그인도 설치돼 있습니다.
+
 ### 포함 파일
 
 | 경로 | 내용 |
@@ -63,6 +69,12 @@ Mask는 FaceOnly와 같은 정방형 크기입니다. Nuke에서 원본 해상�
 ## English
 
 This ComfyUI workflow returns a **Wan Animate FaceOnly** result to the original plate using SAM3 head tracking, then provides square Face/Mask deliverables and a Nuke matchmove `.nk` for compositing.
+
+## Workflow capture
+
+![ComfyUI workflow](docs/workflow.png)
+
+Full workflow capture from the ComfyUI canvas. `Workflow Image Export` is also installed on the server for future exports.
 
 ### Included files
 
